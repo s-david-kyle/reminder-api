@@ -9,5 +9,5 @@ app.listen(8001, () => {
 app.get("/", (req, res) => {
   res.send("Hello World");
 });
-
+app.use(express.json());
 app.use("/reminders", remindersRouter);
